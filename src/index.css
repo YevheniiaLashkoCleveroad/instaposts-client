@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.text-accent {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+textarea {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@layer utilities {
+    .dark .bg-white {
+        @apply bg-slate-900;
+    }
+
+    .dark .bg-gray-50 {
+        @apply bg-slate-950;
+    }
+
+    .dark .bg-gray-100 {
+        @apply bg-slate-900;
+    }
+
+    .dark .text-gray-900 {
+        @apply text-slate-100;
+    }
+
+    .dark .text-gray-800 {
+        @apply text-slate-200;
+    }
+
+    .dark .text-gray-700 {
+        @apply text-slate-300;
+    }
+
+    .dark .border-gray-200 {
+        @apply border-slate-700;
+    }
+}
